@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Viajes</title>
+    <title>Práctica DOM Viajes</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./Js/main.js" defer></script>
 </head>
 <body>
-    
+    <header class="site-header">
+        <nav class="nav" aria-label="Navegación principal">
+            <h1>Práctica Dom</h1>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Bienvenidos</h1>
+        <section class="hero">
+            <img src="./assets/banner/1.jpg" alt="Imagen principal del viaje">
+        </section>
+        <h2>Recomendados</h2>
+        <section id="cards-container" class="cards-container"></section>
+        <h2>Destinos</h2>
+        <section class="select-section">
+            <select id="destinos-select" class="destinos-select">
+                <option value="" disabled selected>Selecciona un destino</option><!--ponemos disabled selected -> para que se oculte cuando se habra el desplegable y no sea una opción-->
+            </select>
+        </section>
+    </main>
 </body>
 </html>
